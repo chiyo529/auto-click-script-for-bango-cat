@@ -12,8 +12,8 @@ delay_before_start = 3      # 脚本开始前的准备时间（秒）
 run_duration_minutes = 0.1     # 【新】您希望脚本运行的总时长（分钟）
 run_duration_seconds = run_duration_minutes * 60 # 转换为秒
 
-click_duration = 0.1      # 鼠标按下 和 弹起 之间的间隔（秒）
-delay_between_clicks = 0.1 # 两次点击间的延迟（秒）
+click_duration = 0.2      # 鼠标按下 和 弹起 之间的间隔（秒）
+delay_between_clicks = 0.3 # 两次点击间的延迟（秒）
 
 # --- 准备 ---
 print(f"!!! 警告：pyautogui.PAUSE 已设为 0（默认值 0.1）!!!")
@@ -70,4 +70,5 @@ finally:
     
     if total_duration > 0:
         clicks_per_second = click_count / total_duration
+
         print(f"平均每秒点击次数 (CPS): {clicks_per_second:.2f}")
